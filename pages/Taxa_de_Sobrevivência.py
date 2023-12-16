@@ -10,7 +10,7 @@ st.set_page_config(page_title="Taxa de Sobrevivência", page_icon="☠️")
 @st.cache_data
 def load_data():
     data = pd.read_csv('gladiator_data3.csv')
-    return data.sample(sample_size)
+    return data
 
 # Carregue os dados (utilizando uma amostra de 1000 linhas, por exemplo)
 data = load_data()
